@@ -1,0 +1,59 @@
+.academics {
+    min-height: fit-content;
+    width: 100vw;
+    // background: #ddd;
+
+    .academics-container {
+        height: 100%;
+        width: 80%;
+        // background: #aaa;
+        margin: 0 auto;
+        padding: 4rem 0;
+
+        .academics-title {
+            display: inline-block;
+            font-size: 3rem;
+            border-bottom: 0.3rem solid $primary-color;
+            margin-bottom: 3rem;
+        }
+
+        .programme-box {
+            // background: #888;
+            margin-bottom: 3rem;
+
+            .programme-title {
+                font-size: 2rem;
+            }
+
+            .programme {
+                font-size: 1.6rem;
+                margin: 0.8rem 0 2rem 2rem;
+            }
+
+            table.customTable {
+                width: 100%;
+                background-color: #fff;
+                border-collapse: collapse;
+                border-width: 2px;
+                border-color: #888;
+                border-style: solid;
+                color: #000000;
+                font-size: 1.4rem;
+                margin-top: 3.5rem;
+
+                td,
+                th {
+                    border-width: 2px;
+                    border-color: #ddd;
+                    border-style: solid;
+                    padding: 5px;
+                }
+
+                thead {
+                    background-color: #6f63e8;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}

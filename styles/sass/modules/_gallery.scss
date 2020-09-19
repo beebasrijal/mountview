@@ -1,0 +1,38 @@
+.gallery {
+    text-align: center;
+
+    .gallery-title {
+        display: inline-block;
+        font-size: 3rem;
+        margin-top: 3rem;
+
+        span {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.2rem 2rem;
+            clip-path: polygon(10% 0, 100% 0%, 90% 100%, 0% 100%);
+            margin: -10px;
+            transition: all 0.18s;
+
+            &:not([class$="active"]):hover {
+                color: $primary-color;
+            }
+        }
+
+        .active {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+
+    #lightgallery {
+        margin-top: 3rem;
+
+        img {
+            height: 26rem;
+            width: 40rem;
+            border-radius: 10px;
+            margin: 2.5rem;
+        }
+    }
+}

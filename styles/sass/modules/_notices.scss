@@ -1,0 +1,154 @@
+.notices-section {
+    .container {
+        margin: 3rem 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .notices {
+            width: 50%;
+
+            .notices-title {
+                font-size: 3rem;
+                display: inline-block;
+                margin-bottom: 3rem;
+                border-bottom: 0.3rem solid $primary-color;
+            }
+
+            .notice-item {
+                display: inline-block;
+                min-height: 15rem;
+                display: grid;
+                grid-template-columns: 2fr 8fr;
+                justify-content: center;
+                background: #eee;
+                margin: 0 3rem 3rem 0;
+
+                &:hover {
+                    .row a {
+                        opacity: 100%;
+                    }
+                }
+
+                .column {
+                    text-align: center;
+                    height: 100%;
+
+                    .date,
+                    .details {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    }
+
+                    .date {
+                        background: #6f63e8;
+                        height: 50%;
+                        color: #fff;
+
+                        .day,
+                        .month {
+                            display: block;
+                        }
+
+                        .day {
+                            font-size: 2rem;
+                        }
+
+                        .month {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .details {
+                        font-size: 1.4rem;
+                        background: #ddd;
+                        height: 50%;
+
+                        a {
+                            text-decoration: none;
+                            color: #337ab7;
+                            margin: 2rem 0 1.7rem 0;
+
+                            .fas {
+                                display: block;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+
+                .row {
+                    padding: 2rem;
+                    text-align: left;
+
+                    .notice-title,
+                    .notice-subtitle {
+                        font-size: 1.6rem;
+                    }
+
+                    .notice-title {
+                        font-weight: 800;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #337ab7;
+                        font-size: 1.3rem;
+                        margin-top: 2rem;
+                        display: block;
+                        opacity: 0;
+                        transition: opacity 0.2s ease-in;
+                    }
+                }
+            }
+        }
+
+        .latest {
+            width: 20%;
+            height: 40rem;
+            align-self: flex-start;
+            margin-top: 4rem;
+
+            .latest-title {
+                font-size: 2.4rem;
+                display: inline-block;
+                border-bottom: 2px solid $primary-color;
+            }
+
+            .latest-list {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                    margin: 1rem;
+
+                    .latest-item {
+                        border-bottom: 1px solid #ccc;
+                        padding: 1rem 0;
+
+                        &:hover {
+                            .main {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+
+                    .main,
+                    .date {
+                        display: block;
+                    }
+
+                    .main {
+                        font-size: 1.6rem;
+                    }
+
+                    .date {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

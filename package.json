@@ -1,0 +1,14 @@
+{
+    "name": "mount-view",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile": "node-sass ./styles/sass/style.scss ./styles/css/style.css -w"
+    },
+    "author": "Abiral Rijal",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^4.14.1"
+    }
+}

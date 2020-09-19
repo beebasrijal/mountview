@@ -1,0 +1,34 @@
+// Global styles
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden; // for making 1 rem = 10px
+}
+
+body {
+    max-width: 100vw;
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    position: relative;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 1rem;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+}

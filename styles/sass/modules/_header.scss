@@ -1,0 +1,64 @@
+.header {
+    position: relative;
+    max-width: 100vw;
+    // Title bar
+    .title-bar {
+        //background-color: #888;
+        height: 15%;
+        display: flex;
+        justify-content: center;
+        //border-bottom: 1px solid rgba($color: #000, $alpha: 0.2);
+
+        .homelink {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+
+            .logo {
+                height: 10rem;
+                width: 10rem;
+
+                &[class*="on"] {
+                    animation: glow ease-in 1.5s;
+                }
+            }
+
+            .txt-box {
+                //background-color: rgb(87, 87, 172);
+                line-height: 1.2;
+                margin-left: 0.8rem;
+                margin-top: -1rem;
+            }
+
+            .title-main,
+            .title-sub {
+                display: block;
+                text-transform: uppercase;
+            }
+
+            .title-main {
+                letter-spacing: 1.08rem;
+                font-size: 3.8rem;
+                font-weight: 800;
+
+                &[class*="on"] {
+                    animation: right-in 1s;
+                }
+            }
+
+            .title-sub {
+                font-size: 2.45rem;
+                font-weight: 500;
+                word-spacing: 0.6rem;
+
+                &[class*="on"] {
+                    animation: right-in 1s 0.1s;
+                }
+            }
+        }
+    }
+}

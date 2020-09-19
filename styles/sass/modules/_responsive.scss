@@ -1,0 +1,219 @@
+@media (max-width: 1250px) {
+    .facilities .facilities-container {
+        width: 100%;
+
+        .facility-card {
+            height: 40em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        height: 5rem;
+
+        .nav-link {
+            display: none;
+        }
+
+        .current-page,
+        .hamburger-menu {
+            display: inline-block;
+        }
+    }
+
+    .notices-container {
+        flex-wrap: wrap;
+
+        .notice-item {
+            margin: 3rem;
+        }
+    }
+
+    .about {
+        display: block;
+        text-align: left;
+        padding: 2rem;
+
+        .about-container {
+            margin: 0 auto;
+        }
+
+        .whoweare,
+        .testimonials {
+            display: inline-block;
+            width: 90%;
+            margin: 3rem;
+        }
+
+        .testimonials {
+            padding-bottom: 5rem;
+
+            .testimonial-user {
+                margin-top: 5rem;
+            }
+        }
+    }
+
+    .facilities {
+        .facilities-container {
+            flex-wrap: wrap;
+
+            .facility-card {
+                height: fit-content;
+            }
+        }
+    }
+
+    .slider {
+        height: 50vh;
+    }
+
+    .principal-msg .msg-box .principal-img {
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .contact .contact-container .contact-1 .contact-form {
+        input,
+        textarea {
+            width: 28rem;
+        }
+    }
+
+    .notices-section .container {
+        flex-direction: column;
+
+        .notices,
+        .latest {
+            width: 88%;
+            margin: 0 auto;
+        }
+
+        .notices .notice-item {
+            margin-right: 0;
+        }
+    }
+
+    .slider .slide {
+        &:first-child {
+            background: url("../../../assets/carousel1_small.jpg") no-repeat top
+                top/cover;
+        }
+        &:nth-child(2) {
+            background: url("../../../assets/carousel3_small.jpg") no-repeat
+                center top/cover;
+        }
+        &:nth-child(3) {
+            background: url("../../../assets/carousel2_small.jpg") no-repeat
+                center top/cover;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header .title-bar .logo-box {
+        .title-main {
+            font-size: 3.2rem;
+        }
+
+        .title-sub {
+            font-size: 2.2rem;
+        }
+
+        .logo {
+            height: 9rem;
+            width: 9rem;
+        }
+    }
+
+    .contact .contact-container {
+        display: block;
+
+        .contact-1 .contact-form {
+            input,
+            textarea {
+                width: 100%;
+            }
+        }
+
+        .contact-1 {
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.2);
+            width: 100%;
+        }
+
+        .contact-2 {
+            background: #eee;
+            width: 100%;
+            display: block;
+            margin-top: 3rem;
+            border-radius: 5px;
+            padding-bottom: 1rem;
+
+            .box {
+                width: 90%;
+                margin: 2rem 2rem;
+            }
+        }
+    }
+
+    .gallery {
+        #lightgallery {
+            margin-left: 3rem;
+            margin-right: 3rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            img {
+                height: 24rem;
+                width: 38rem;
+                margin: 0.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
+    .header .title-bar .logo-box {
+        .title-main {
+            font-size: 2.9rem;
+        }
+
+        .title-sub {
+            font-size: 2rem;
+        }
+
+        .logo {
+            height: 7rem;
+            width: 7em;
+        }
+    }
+
+    .navbar {
+        height: 4.5rem;
+
+        .current-page {
+            font-size: 1.6rem;
+            font-weight: 900;
+        }
+
+        .hamburger-menu {
+            font-size: 1.7rem;
+        }
+    }
+
+    .contact .contact-container {
+        .contact-1 .contact-form {
+            input,
+            textarea {
+                width: 90%;
+            }
+        }
+    }
+}
